@@ -36,9 +36,9 @@ app.use(express.static(publicPath));
 app.use(cors());
 
 let token=false;
-let url="http://insoctankwebapp-dev.us-east-1.elasticbeanstalk.com"
+let url="http://localhost"
 
-//http://insoctankwebapp-dev.us-east-1.elasticbeanstalk.com
+//http://localhost
 
 app.get('/', (req, res) => {
 

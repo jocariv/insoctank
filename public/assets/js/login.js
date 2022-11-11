@@ -16,7 +16,7 @@ $("#buttonlogin").on("click",function(){
 
     }else{
 
-      urlg='http://insoctankwebapp-dev.us-east-1.elasticbeanstalk.com/loginapp';
+      urlg='http://localhost/loginapp';
 
 
       axios.post(urlg, {
@@ -30,7 +30,7 @@ $("#buttonlogin").on("click",function(){
   
           //console.log(response.data);
           if(response.data=="ok"){
-            window.location.replace("http://insoctankwebapp-dev.us-east-1.elasticbeanstalk.com/admin");
+            window.location.replace("http://localhost/admin");
 
           }else{
 

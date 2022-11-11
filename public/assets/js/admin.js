@@ -265,8 +265,8 @@ function abrirmolda(id){
 
 $("#update").on("click",function(){
 
-   let urlg='http://insoctankwebapp-dev.us-east-1.elasticbeanstalk.com/form';
-   //let urlg='http://localhost:8080/form';
+   //let urlg='http://localhost/form';
+   let urlg='http://localhost:8080/form';
    
    const headers = {
     'Content-Type': 'application/json',
@@ -383,7 +383,7 @@ $("#update").on("click",function(){
 $("#log-out").on("click",function(){
 
     let data=0;
-    urlg='http://insoctankwebapp-dev.us-east-1.elasticbeanstalk.com/logout';
+    urlg='http://localhost/logout';
 
     axios.post(urlg, {
   
@@ -393,7 +393,7 @@ $("#log-out").on("click",function(){
       .then(function (response) {
 
         //console.log(response.data);
-        window.location.replace("http://insoctankwebapp-dev.us-east-1.elasticbeanstalk.com:8080");
+        window.location.replace("http://localhost:8080");
 
       })
       .catch(function (error) {
