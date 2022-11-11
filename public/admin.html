@@ -492,7 +492,7 @@
        });        
      } else{
        console.log("Sin Sesion")
-        window.location.href = 'http://localhost:8080/login.html';
+        window.location.href = 'http://localhost/login.html';
      }
    };
 
@@ -500,7 +500,7 @@
        if(cognitoUser != null){
          console.log('Cerrando Sesion');
          cognitoUser.signOut();
-         window.location.href = 'http://localhost:8080/login.html';
+         window.location.href = 'http://localhost/login.html';
        }
    }
   

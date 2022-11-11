@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 const multer = require('multer');
 
 const app = express()
-const port =process.env.Port || 8080
+const port =process.env.Port || 80
 
 //configuracion del servidor https
 
@@ -19,7 +19,7 @@ const port =process.env.Port || 8080
   cert: fs.readFileSync('mi_certificado.crt'),
   key: fs.readFileSync('mi_certificado.key')
 },app).listen(port, function(){
- console.log('Servidor https correindo en el puerto 8080');
+ console.log('Servidor https correindo en el puerto 80');
 });*/
 
 

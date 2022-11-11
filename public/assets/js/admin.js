@@ -266,7 +266,7 @@ function abrirmolda(id){
 $("#update").on("click",function(){
 
    //let urlg='http://localhost/form';
-   let urlg='http://localhost:8080/form';
+   let urlg='http://localhost/form';
    
    const headers = {
     'Content-Type': 'application/json',
@@ -393,7 +393,7 @@ $("#log-out").on("click",function(){
       .then(function (response) {
 
         //console.log(response.data);
-        window.location.replace("http://localhost:8080");
+        window.location.replace("http://localhost");
 
       })
       .catch(function (error) {

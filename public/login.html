@@ -154,8 +154,8 @@
          console.log(result);
          var accessToken = result.getAccessToken().getJwtToken();
          console.log(accessToken);
-         window.location.href = 'http://localhost:8080/admin.html';
-         //window.location.href = 'http://localhost:8080/admin.html';
+         window.location.href = 'http://localhost/admin.html';
+         //window.location.href = 'http://localhost/admin.html';
        },
        onFailure: function(err){
          alert(err.message || JSON.stringify(err));            
